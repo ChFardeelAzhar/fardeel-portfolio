@@ -1,0 +1,84 @@
+[
+  {
+    "id": "dev-entity",
+    "company": "Dev Entity",
+    "role": "Software Engineer — Android & AI Workflows",
+    "roleVariants": {
+      "automationCV": "Software Engineer (Android & AI Workflows)",
+      "androidCV": "Android Developer",
+      "linkedIn": "Junior Android Developer"
+    },
+    "employmentType": "Full-time",
+    "location": {
+      "city": "Okara / Lahore",
+      "region": "Punjab",
+      "country": "Pakistan",
+      "workMode": "On-site / Hybrid"
+    },
+    "startDate": "March 2025",
+    "endDate": "Present",
+    "isCurrent": true,
+    "summary": "Core contributor to a flagship multi-module Android e-commerce application serving 5M+ users across grocery, food, beauty, and pharmacy verticals, alongside engineering automation and AI-driven initiatives.",
+    "keyAchievements": [
+      "Engineered and maintained a production-scale Android application with 5,000,000+ Google Play Store downloads and a 4.4★ user rating.",
+      "Developed features across 25+ independent Gradle modules adhering to strict Clean Architecture and MVVM separation of concerns.",
+      "Standardized UI components using Jetpack Compose, ensuring visual consistency and high reusability across four distinct business domains.",
+      "Integrated Apollo GraphQL client for network requests, implementing query caching and reducing unnecessary payload overhead.",
+      "Implemented feature flagging infrastructure to support A/B testing, phased rollouts, and safe continuous deployment.",
+      "Optimized checkout pipelines, cart calculation logic, and deep-link routing for high-conversion user journeys.",
+      "Configured Dagger Hilt dependency injection graphs across modular boundaries, minimizing build times and eliminating circular dependencies.",
+      "Implemented RudderStack event analytics and crash reporting pipelines for production observability and rapid regression triage."
+    ],
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Clean Architecture",
+      "Multi-Module (25+ Modules)",
+      "Dagger Hilt",
+      "Apollo Client (GraphQL)",
+      "REST APIs",
+      "RudderStack",
+      "Feature Flags",
+      "Coroutines & Flow"
+    ]
+  },
+  {
+    "id": "freelance-self-employed",
+    "company": "Self-Employed / Independent Engineering",
+    "role": "Android Developer & Open-Source Creator",
+    "roleVariants": {
+      "androidCV": "Self-Employed | Android Developer",
+      "linkedIn": "Freelance (Self employed) | Android Developer / Software Developer"
+    },
+    "employmentType": "Independent / Contract",
+    "location": {
+      "city": "Lahore / Okara",
+      "region": "Punjab",
+      "country": "Pakistan",
+      "workMode": "Remote"
+    },
+    "startDate": "September 2023",
+    "endDate": "February 2025",
+    "isCurrent": false,
+    "dateDiscrepancyNote": "Android CV states September 2023 – February 2025 (1 yr 6 mos). LinkedIn states December 2022 – April 2025 (2 yrs 5 mos). Verified as self-driven development and open-source building period.",
+    "summary": "Mentored under a senior Android engineer, building production-ready mobile applications, publishing to Google Play Store, and creating open-source Jetpack Compose developer tooling.",
+    "keyAchievements": [
+      "Created and open-sourced compose-auto-shimmer on GitHub, gaining 46+ stars and providing Compose engineers with automated skeleton screen generation.",
+      "Architected, built, and successfully published CricScore: Live Match Scorer (com.fardeel.cricscore) on Google Play Store with offline Room DB persistence.",
+      "Engineered 8+ functional Android applications across diverse domains including real-time chat (Chatify / Sync-Up), expense management with Room DB and MPAndroidChart, medical tax calculation, weather tracking with Retrofit, and news feeds.",
+      "Deepened hands-on mastery in modern Android patterns: Clean Architecture, MVVM, MVI, Firebase Auth/Realtime Database, and Dagger Hilt.",
+      "Began active engineering in AI Automation, building multi-agent systems and automated tooling in Python, LangGraph, and CrewAI."
+    ],
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "MVVM & MVI",
+      "Room DB",
+      "Firebase",
+      "Dagger Hilt",
+      "Retrofit",
+      "Material Design 3",
+      "Git & GitHub"
+    ]
+  }
+]

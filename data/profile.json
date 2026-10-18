@@ -1,0 +1,108 @@
+{
+  "personal": {
+    "name": "Fardeel Azhar",
+    "headline": "Android Engineer — Kotlin & Jetpack Compose | Agentic AI & Automation",
+    "shortBio": "Android Engineer specializing in Kotlin, Jetpack Compose, and Clean Architecture with production experience on multi-module applications serving millions of users. Actively building practical Agentic AI workflows and engineering automation pipelines.",
+    "location": {
+      "city": "Lahore",
+      "region": "Punjab",
+      "country": "Pakistan",
+      "workPreference": "Open to International Remote Opportunities"
+    },
+    "contact": {
+      "email": "fardeelazhar82@gmail.com",
+      "github": "https://github.com/ChFardeelAzhar",
+      "linkedin": "https://linkedin.com/in/fardeel-azhar",
+      "gumroad": "https://fardeel.gumroad.com/l/duvlgm",
+      "phone": null
+    }
+  },
+  "positioning": {
+    "primaryRole": "Android Engineer",
+    "coreSpecialization": "Kotlin, Jetpack Compose, MVVM, Clean Architecture, Multi-Module Engineering",
+    "emergingExpertise": "Agentic AI, Workflow Automation, Multi-Agent Systems, LLM Orchestration",
+    "targetRoles": [
+      "Android Engineer",
+      "Mobile Engineer (Android / Kotlin)",
+      "AI Automation & Software Engineer"
+    ]
+  },
+  "summary": {
+    "verifiedHighlights": [
+      "Contributed to a flagship production Android e-commerce application with 5M+ downloads on Google Play Store across 25+ feature modules.",
+      "Author of compose-auto-shimmer, an open-source Jetpack Compose library with 46+ stars on GitHub.",
+      "Creator and publisher of CricScore: Live Match Scorer, live on Google Play Store (com.fardeel.cricscore).",
+      "Architected real-world Agentic AI systems including a multi-agent ticket-to-PR Android crash-fix pipeline and LMS automation workflows.",
+      "Hands-on expertise across modern Android stack: Kotlin, Jetpack Compose, Coroutines, Flow, Dagger Hilt, Room DB, Apollo GraphQL, and RudderStack analytics."
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science in Software Engineering (BSSE)",
+      "institution": "Virtual University of Pakistan (VU)",
+      "period": "2025 – 2029",
+      "status": "In Progress",
+      "notes": "Pursuing software engineering degree while actively working in production software development."
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Advanced / Professional Working"
+    },
+    {
+      "language": "Urdu",
+      "proficiency": "Proficient / Native"
+    },
+    {
+      "language": "Punjabi",
+      "proficiency": "Advanced / Native"
+    }
+  ],
+  "skills": {
+    "androidEngineering": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Clean Architecture",
+      "MVVM / MVI",
+      "Multi-Module Architecture",
+      "Coroutines & Flow",
+      "Dagger Hilt",
+      "Room Database",
+      "Apollo Client (GraphQL)",
+      "Retrofit (REST APIs)",
+      "Navigation Component & Deep Linking",
+      "Material Design 3",
+      "XML Layouts & View Binding",
+      "Feature Flags & A/B Testing",
+      "RudderStack Analytics",
+      "Firebase (Auth, Realtime DB, Firestore, Crashlytics)",
+      "Gradle & Gradle Kotlin DSL (build.gradle.kts)"
+    ],
+    "aiAndAutomation": [
+      "Python",
+      "LangGraph",
+      "LangChain",
+      "CrewAI",
+      "OpenAI Agents SDK",
+      "AutoGen",
+      "Multi-Agent Orchestration",
+      "Function Calling & Tool Execution",
+      "Prompt Engineering & Structured Outputs",
+      "Playwright (Browser Automation)",
+      "EgoLite (Agentic Browser Automation)",
+      "n8n Workflow Automation",
+      "Antigravity CLI (agy)",
+      "ADB Automation (Device-level QA)"
+    ],
+    "developerTools": [
+      "Git & GitHub",
+      "Android Studio",
+      "VS Code",
+      "Cursor / Codex / Claude Code",
+      "UV (Python Package Manager)",
+      "Docker",
+      "Figma (Design-to-Code)"
+    ]
+  }
+}

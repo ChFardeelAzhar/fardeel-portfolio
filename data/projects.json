@@ -1,0 +1,232 @@
+[
+  {
+    "id": "compose-auto-shimmer",
+    "name": "Compose Auto Shimmer",
+    "category": "Android Open Source Library",
+    "tagline": "Stop hand-coding skeleton screens. Your UI is your skeleton.",
+    "description": "An open-source Jetpack Compose library that automatically transforms live UI component trees into responsive, pixel-matched shimmer loading skeletons without hand-coded placeholder layouts.",
+    "featured": true,
+    "ranking": 1,
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Android SDK",
+      "Canvas & Shader Animation",
+      "JitPack",
+      "Gradle"
+    ],
+    "metrics": {
+      "githubStars": 46,
+      "status": "Published Open Source",
+      "license": "MIT"
+    },
+    "verifiedDetails": [
+      "Provides three flexible integration modes: ShimmerBox (automatic wrapper measured from live layouts), ShimmerOverlay (sweep effect over arbitrary elements), and ShimmerPlaceholder (fixed dimensions).",
+      "Eliminates skeleton-to-layout drift across foldables, tablets, and varying Android device form factors.",
+      "Published and installable via JitPack for Compose 1.4+."
+    ],
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/compose-auto-shimmer",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "confidentiality": "Public Open Source"
+  },
+  {
+    "id": "android-crash-fix-agent",
+    "name": "Android Crash-Fix Assistant",
+    "category": "Agentic AI & Engineering Automation",
+    "tagline": "Autonomous Ticket-to-PR Android Crash Debugger and Code Repair Pipeline",
+    "description": "A multi-agent software engineering system built with CrewAI that autonomously ingests Android crash stack traces, plans architectural repairs, modifies codebase via Antigravity CLI, runs compilation tests, and verifies fixes on live Android devices via ADB before opening pull requests.",
+    "featured": true,
+    "ranking": 2,
+    "technologies": [
+      "Python",
+      "CrewAI",
+      "Antigravity CLI (agy)",
+      "Gradle Test Verification",
+      "ADB Device Automation",
+      "Git Tooling",
+      "LLM Prompt Engineering"
+    ],
+    "metrics": {
+      "architecture": "7 Specialized Autonomous Agents",
+      "status": "Functional Multi-Agent System"
+    },
+    "verifiedDetails": [
+      "Architected 7 specialized agents: Crash Analyst, Prompt Engineer, Antigravity Operator, Build Verifier, Device Operator, Git Release Manager, and PR Report Compiler.",
+      "Integrates custom bridge tools enforcing directory sandboxing, command sanitization, and lifecycle safety constraints.",
+      "Automates physical verification: launches activities on connected emulators/devices via ADB and captures screenshot receipts to validate fix stability."
+    ],
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/android_crash_fix_agent",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "confidentiality": "Public Personal Project"
+  },
+  {
+    "id": "cricscore",
+    "name": "CricScore: Live Match Scorer",
+    "category": "Production Android Application",
+    "tagline": "Track live cricket matches, scorecards, stats, and tournament scores offline.",
+    "description": "A production-grade Android sports application designed for real-time offline scoring, individual player statistics tracking, and tournament management with clean, reactive Jetpack Compose interfaces.",
+    "featured": true,
+    "ranking": 3,
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "MVVM Architecture",
+      "Room Database",
+      "Coroutines & Flow",
+      "Material Design 3"
+    ],
+    "metrics": {
+      "playStoreStatus": "Live on Google Play Store",
+      "packageId": "com.fardeel.cricscore",
+      "developerName": "Fardeel Develops"
+    },
+    "verifiedDetails": [
+      "Engineered from architectural design through Google Play Store production release.",
+      "Implements modern Android architecture patterns with Jetpack Compose, MVVM state holding, and robust local offline persistence via Room DB.",
+      "Optimized for smooth UI rendering and strict state preservation across configuration changes."
+    ],
+    "links": {
+      "github": null,
+      "liveDemo": null,
+      "playStore": "https://play.google.com/store/apps/details?id=com.fardeel.cricscore"
+    },
+    "confidentiality": "Public Play Store App"
+  },
+  {
+    "id": "autolocale-android",
+    "name": "AutoLocale",
+    "category": "Android Developer Tooling & Automation",
+    "tagline": "Stop writing strings.xml by hand. Your code is your source of truth.",
+    "description": "A dual-module Android developer tooling suite consisting of a Gradle plugin that statically scans Kotlin Jetpack Compose code for hardcoded strings and generates localized strings.xml files across languages, alongside a Compose-native runtime for dynamic locale switching.",
+    "featured": true,
+    "ranking": 4,
+    "technologies": [
+      "Kotlin",
+      "Gradle Plugin Development",
+      "Jetpack Compose",
+      "AST Scanning",
+      "XML Resource Management",
+      "Android Localization"
+    ],
+    "metrics": {
+      "architecture": "Two Modules (Gradle Plugin + Runtime Library)",
+      "status": "Open Source Alpha"
+    },
+    "verifiedDetails": [
+      "Architected autolocale-plugin featuring AST SourceTransformer, Collision-safe KeyGenerator, and XmlManager.",
+      "Architected autolocale-runtime providing AutoLocaleManager, AutoLocaleProvider, and reactive AutoLocaleState for instant in-app language toggling.",
+      "Eliminates human error, missing resource keys, and code-to-resource drift in multi-language Android apps."
+    ],
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/autolocale-android",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "confidentiality": "Public Open Source"
+  },
+  {
+    "id": "vu-quiz-assistant-agent",
+    "name": "VU Learning Assistant",
+    "category": "AI Workflow & Browser Automation",
+    "tagline": "Autonomous LMS Quiz-Tracking & Assessment Workflow Assistant",
+    "description": "A hybrid automation system combining a LangGraph state machine with headless Playwright browser automation to sign into student portals, track active quiz deadlines across courses, and dispatch automated email summaries via Resend.",
+    "featured": false,
+    "ranking": 5,
+    "technologies": [
+      "Python",
+      "LangGraph",
+      "Playwright",
+      "Next.js 16 (App Router)",
+      "Supabase Auth & Database",
+      "Resend API"
+    ],
+    "metrics": {
+      "components": "Python LangGraph Bot + Next.js / Supabase Web Dashboard",
+      "status": "Functional System"
+    },
+    "verifiedDetails": [
+      "Implemented cyclic LangGraph state machine navigating multi-course tables with checkpointing and error recovery.",
+      "Engineered full-stack companion web portal featuring Next.js 16, Supabase authentication, AES-256 encrypted credential storage, and realtime log streaming.",
+      "Provides deadline notifications directly to user email to prevent missed academic submissions."
+    ],
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/vu-quiz-assistant-agent",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "confidentiality": "Public Personal Project"
+  },
+  {
+    "id": "android-job-hunting-agent-n8n",
+    "name": "Android Job Hunter Agent",
+    "category": "Autonomous Workflow Automation",
+    "tagline": "Autonomous AI-Powered Android Developer Job Discovery & Matching Pipeline",
+    "description": "An automated workflow engine built with n8n that scans global job markets for Android/Kotlin/Jetpack Compose positions, evaluates alignment against an engineer's technical profile, and compiles personalized alerts and cover materials.",
+    "featured": false,
+    "ranking": 6,
+    "technologies": [
+      "n8n Workflow Automation",
+      "OpenRouter AI / LLMs",
+      "SerpAPI",
+      "Gmail API",
+      "Google Sheets API"
+    ],
+    "metrics": {
+      "workflowComplexity": "Multi-Node Scheduled Pipeline (35 KB JSON)",
+      "status": "Active Workflow Template"
+    },
+    "verifiedDetails": [
+      "Scheduled daily morning search evaluating incoming Android roles against skills, compensation, and location parameters.",
+      "Integrates LLM scoring nodes that generate structured candidate match ratings and draft custom outreach briefs.",
+      "Automates record archiving in Google Sheets with instant Gmail notification dispatches."
+    ],
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/android-job-hunting-agent-n8n",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "confidentiality": "Public Automation Workflow"
+  },
+  {
+    "id": "flagship-ecommerce-platform",
+    "name": "Enterprise Multi-Module E-Commerce Android Platform",
+    "category": "Enterprise Production Android Engineering",
+    "tagline": "High-Performance Multi-Module Android Retail Ecosystem (5M+ Downloads)",
+    "description": "Core professional contribution to a commercial Android e-commerce ecosystem serving four distinct business verticals: Retail/Grocery, Food Delivery, Beauty, and Pharmacy.",
+    "featured": true,
+    "ranking": 7,
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Clean Architecture",
+      "25+ Feature Modules",
+      "Dagger Hilt",
+      "Apollo Client (GraphQL)",
+      "RudderStack Analytics",
+      "Feature Flags"
+    ],
+    "metrics": {
+      "scale": "5,000,000+ Google Play Downloads",
+      "rating": "4.4★ Rating",
+      "architecture": "25+ Independent Feature Modules"
+    },
+    "verifiedDetails": [
+      "Engineered and maintained modular feature modules enforcing strict separation of concerns across Domain, Data, and UI layers.",
+      "Built production Jetpack Compose design system components shared across grocery, pharmacy, food, and beauty verticals.",
+      "Integrated Apollo GraphQL client for efficient cached queries, normalized cache handling, and network latency reduction.",
+      "Implemented feature flag integrations for gradual progressive rollouts, A/B experiments, and cart checkout optimizations."
+    ],
+    "links": {
+      "github": null,
+      "liveDemo": null,
+      "playStore": null
+    },
+    "confidentiality": "Professional Client / Company Project (Proprietary source code protected; high-level engineering achievements verified)"
+  }
+]
