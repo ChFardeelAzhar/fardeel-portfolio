@@ -2,44 +2,48 @@
   {
     "id": "compose-auto-shimmer",
     "name": "Compose Auto Shimmer",
-    "category": "Android Open Source Library",
+    "category": "Open-Source Libraries & Developer Tools",
+    "categorySlug": "open-source",
     "tagline": "Stop hand-coding skeleton screens. Your UI is your skeleton.",
     "description": "An open-source Jetpack Compose library that automatically transforms live UI component trees into responsive, pixel-matched shimmer loading skeletons without hand-coded placeholder layouts.",
     "featured": true,
-    "ranking": 1,
+    "heroOrder": 1,
     "technologies": [
       "Kotlin",
       "Jetpack Compose",
-      "Android SDK",
       "Canvas & Shader Animation",
       "JitPack",
       "Gradle"
     ],
     "metrics": {
       "githubStars": 46,
-      "status": "Published Open Source",
-      "license": "MIT"
+      "license": "MIT",
+      "status": "Published Open Source"
     },
     "verifiedDetails": [
       "Provides three flexible integration modes: ShimmerBox (automatic wrapper measured from live layouts), ShimmerOverlay (sweep effect over arbitrary elements), and ShimmerPlaceholder (fixed dimensions).",
       "Eliminates skeleton-to-layout drift across foldables, tablets, and varying Android device form factors.",
       "Published and installable via JitPack for Compose 1.4+."
     ],
+    "image": "/images/projects/compose-auto-shimmer.svg",
+    "aspectRatio": "12/10",
     "links": {
       "github": "https://github.com/ChFardeelAzhar/compose-auto-shimmer",
       "liveDemo": null,
       "playStore": null
     },
+    "assetStatus": "conceptual-placeholder",
     "confidentiality": "Public Open Source"
   },
   {
     "id": "android-crash-fix-agent",
     "name": "Android Crash-Fix Assistant",
-    "category": "Agentic AI & Engineering Automation",
+    "category": "Agentic AI & AI Developer Tools",
+    "categorySlug": "agentic-ai",
     "tagline": "Autonomous Ticket-to-PR Android Crash Debugger and Code Repair Pipeline",
-    "description": "A multi-agent software engineering system built with CrewAI that autonomously ingests Android crash stack traces, plans architectural repairs, modifies codebase via Antigravity CLI, runs compilation tests, and verifies fixes on live Android devices via ADB before opening pull requests.",
+    "description": "A multi-agent software engineering system built with CrewAI that autonomously ingests Android crash stack traces, plans architectural repairs, modifies codebases via Antigravity CLI, runs compilation tests, and verifies fixes on live Android devices via ADB before opening pull requests.",
     "featured": true,
-    "ranking": 2,
+    "heroOrder": 2,
     "technologies": [
       "Python",
       "CrewAI",
@@ -58,21 +62,25 @@
       "Integrates custom bridge tools enforcing directory sandboxing, command sanitization, and lifecycle safety constraints.",
       "Automates physical verification: launches activities on connected emulators/devices via ADB and captures screenshot receipts to validate fix stability."
     ],
+    "image": "/images/projects/android-crash-fix-agent.svg",
+    "aspectRatio": "12/10",
     "links": {
       "github": "https://github.com/ChFardeelAzhar/android_crash_fix_agent",
       "liveDemo": null,
       "playStore": null
     },
+    "assetStatus": "conceptual-placeholder",
     "confidentiality": "Public Personal Project"
   },
   {
     "id": "cricscore",
     "name": "CricScore: Live Match Scorer",
-    "category": "Production Android Application",
+    "category": "Android Engineering",
+    "categorySlug": "android",
     "tagline": "Track live cricket matches, scorecards, stats, and tournament scores offline.",
     "description": "A production-grade Android sports application designed for real-time offline scoring, individual player statistics tracking, and tournament management with clean, reactive Jetpack Compose interfaces.",
     "featured": true,
-    "ranking": 3,
+    "heroOrder": 3,
     "technologies": [
       "Kotlin",
       "Jetpack Compose",
@@ -91,21 +99,25 @@
       "Implements modern Android architecture patterns with Jetpack Compose, MVVM state holding, and robust local offline persistence via Room DB.",
       "Optimized for smooth UI rendering and strict state preservation across configuration changes."
     ],
+    "image": "/images/projects/cricscore.svg",
+    "aspectRatio": "12/10",
     "links": {
       "github": null,
       "liveDemo": null,
       "playStore": "https://play.google.com/store/apps/details?id=com.fardeel.cricscore"
     },
+    "assetStatus": "conceptual-placeholder",
     "confidentiality": "Public Play Store App"
   },
   {
     "id": "autolocale-android",
     "name": "AutoLocale",
-    "category": "Android Developer Tooling & Automation",
+    "category": "Open-Source Libraries & Developer Tools",
+    "categorySlug": "open-source",
     "tagline": "Stop writing strings.xml by hand. Your code is your source of truth.",
     "description": "A dual-module Android developer tooling suite consisting of a Gradle plugin that statically scans Kotlin Jetpack Compose code for hardcoded strings and generates localized strings.xml files across languages, alongside a Compose-native runtime for dynamic locale switching.",
     "featured": true,
-    "ranking": 4,
+    "heroOrder": 4,
     "technologies": [
       "Kotlin",
       "Gradle Plugin Development",
@@ -123,84 +135,25 @@
       "Architected autolocale-runtime providing AutoLocaleManager, AutoLocaleProvider, and reactive AutoLocaleState for instant in-app language toggling.",
       "Eliminates human error, missing resource keys, and code-to-resource drift in multi-language Android apps."
     ],
+    "image": "/images/projects/autolocale-android.svg",
+    "aspectRatio": "12/10",
     "links": {
       "github": "https://github.com/ChFardeelAzhar/autolocale-android",
       "liveDemo": null,
       "playStore": null
     },
+    "assetStatus": "conceptual-placeholder",
     "confidentiality": "Public Open Source"
-  },
-  {
-    "id": "vu-quiz-assistant-agent",
-    "name": "VU Learning Assistant",
-    "category": "AI Workflow & Browser Automation",
-    "tagline": "Autonomous LMS Quiz-Tracking & Assessment Workflow Assistant",
-    "description": "A hybrid automation system combining a LangGraph state machine with headless Playwright browser automation to sign into student portals, track active quiz deadlines across courses, and dispatch automated email summaries via Resend.",
-    "featured": false,
-    "ranking": 5,
-    "technologies": [
-      "Python",
-      "LangGraph",
-      "Playwright",
-      "Next.js 16 (App Router)",
-      "Supabase Auth & Database",
-      "Resend API"
-    ],
-    "metrics": {
-      "components": "Python LangGraph Bot + Next.js / Supabase Web Dashboard",
-      "status": "Functional System"
-    },
-    "verifiedDetails": [
-      "Implemented cyclic LangGraph state machine navigating multi-course tables with checkpointing and error recovery.",
-      "Engineered full-stack companion web portal featuring Next.js 16, Supabase authentication, AES-256 encrypted credential storage, and realtime log streaming.",
-      "Provides deadline notifications directly to user email to prevent missed academic submissions."
-    ],
-    "links": {
-      "github": "https://github.com/ChFardeelAzhar/vu-quiz-assistant-agent",
-      "liveDemo": null,
-      "playStore": null
-    },
-    "confidentiality": "Public Personal Project"
-  },
-  {
-    "id": "android-job-hunting-agent-n8n",
-    "name": "Android Job Hunter Agent",
-    "category": "Autonomous Workflow Automation",
-    "tagline": "Autonomous AI-Powered Android Developer Job Discovery & Matching Pipeline",
-    "description": "An automated workflow engine built with n8n that scans global job markets for Android/Kotlin/Jetpack Compose positions, evaluates alignment against an engineer's technical profile, and compiles personalized alerts and cover materials.",
-    "featured": false,
-    "ranking": 6,
-    "technologies": [
-      "n8n Workflow Automation",
-      "OpenRouter AI / LLMs",
-      "SerpAPI",
-      "Gmail API",
-      "Google Sheets API"
-    ],
-    "metrics": {
-      "workflowComplexity": "Multi-Node Scheduled Pipeline (35 KB JSON)",
-      "status": "Active Workflow Template"
-    },
-    "verifiedDetails": [
-      "Scheduled daily morning search evaluating incoming Android roles against skills, compensation, and location parameters.",
-      "Integrates LLM scoring nodes that generate structured candidate match ratings and draft custom outreach briefs.",
-      "Automates record archiving in Google Sheets with instant Gmail notification dispatches."
-    ],
-    "links": {
-      "github": "https://github.com/ChFardeelAzhar/android-job-hunting-agent-n8n",
-      "liveDemo": null,
-      "playStore": null
-    },
-    "confidentiality": "Public Automation Workflow"
   },
   {
     "id": "flagship-ecommerce-platform",
     "name": "Enterprise Multi-Module E-Commerce Android Platform",
-    "category": "Enterprise Production Android Engineering",
+    "category": "Android Engineering",
+    "categorySlug": "android",
     "tagline": "High-Performance Multi-Module Android Retail Ecosystem (5M+ Downloads)",
     "description": "Core professional contribution to a commercial Android e-commerce ecosystem serving four distinct business verticals: Retail/Grocery, Food Delivery, Beauty, and Pharmacy.",
     "featured": true,
-    "ranking": 7,
+    "heroOrder": 5,
     "technologies": [
       "Kotlin",
       "Jetpack Compose",
@@ -222,11 +175,404 @@
       "Integrated Apollo GraphQL client for efficient cached queries, normalized cache handling, and network latency reduction.",
       "Implemented feature flag integrations for gradual progressive rollouts, A/B experiments, and cart checkout optimizations."
     ],
+    "image": "/images/projects/flagship-ecommerce.svg",
+    "aspectRatio": "12/10",
     "links": {
       "github": null,
       "liveDemo": null,
       "playStore": null
     },
-    "confidentiality": "Professional Client / Company Project (Proprietary source code protected; high-level engineering achievements verified)"
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Enterprise Client Project (Architecture verified, confidential code protected)"
+  },
+  {
+    "id": "kinhealth",
+    "name": "KinHealth",
+    "category": "Android Engineering",
+    "categorySlug": "android",
+    "tagline": "AI-Assisted Healthcare & Medical Document Workflow App",
+    "description": "An AI-powered healthcare application concept engineered for on-device and cloud-based intelligence, supporting patient record organization, structured medical document understanding, and smart appointment scheduling.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "On-Device AI / LLM Integration",
+      "Clean Architecture",
+      "Room DB",
+      "Material Design 3"
+    ],
+    "metrics": {
+      "status": "In Active Development",
+      "focus": "Healthcare & Medical LLM Workflows"
+    },
+    "verifiedDetails": [
+      "Designed clean Android architecture separating AI inference services from domain business logic.",
+      "Explores hybrid on-device tokenization and remote LLM orchestration for responsive patient assistance.",
+      "Emphasizes zero-friction UI state management with Kotlin StateFlow and Jetpack Compose."
+    ],
+    "image": "/images/projects/kinhealth.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": null,
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Private Repository / Concept Preview"
+  },
+  {
+    "id": "coffee-shop-pos",
+    "name": "Coffee Shop Desktop POS",
+    "category": "Desktop Software & POS",
+    "categorySlug": "desktop-pos",
+    "tagline": "Streamlined Point-of-Sale & Table Management Desktop Software",
+    "description": "A purpose-built desktop application designed for fast-paced coffee shop and quick-service restaurant operations, featuring rapid touch order entry, dynamic modifiers, kitchen dispatching, and shift sales auditing.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Desktop Architecture",
+      "Kotlin / Java UI",
+      "Local Database Storage",
+      "Receipt Printing Integration",
+      "Cash Drawer & Payment Workflows"
+    ],
+    "metrics": {
+      "platform": "Desktop (macOS / Windows)",
+      "type": "Standalone Point of Sale"
+    },
+    "verifiedDetails": [
+      "Designed specifically for wide desktop monitors with high-density order queues and touch-optimized beverage selection grids.",
+      "Includes configurable modifier trees (milk options, syrups, espresso shots, sizing) with automatic price calculations.",
+      "Generates structured end-of-shift sales breakdowns and offline transaction logging."
+    ],
+    "image": "/images/projects/coffee-shop-pos.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": null,
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Desktop Solution Showcase"
+  },
+  {
+    "id": "vu-quiz-assistant-agent",
+    "name": "VU Learning Assistant",
+    "category": "Agentic AI & AI Developer Tools",
+    "categorySlug": "agentic-ai",
+    "tagline": "Autonomous LMS Quiz-Tracking & Assessment Workflow Assistant",
+    "description": "A hybrid automation system combining a LangGraph state machine with headless Playwright browser automation to sign into student portals, track active quiz deadlines across courses, and dispatch automated email summaries via Resend.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Python",
+      "LangGraph",
+      "Playwright",
+      "Next.js 16 (App Router)",
+      "Supabase Auth & Database",
+      "Resend API"
+    ],
+    "metrics": {
+      "components": "Python LangGraph Bot + Next.js / Supabase Web Dashboard",
+      "status": "Functional System"
+    },
+    "verifiedDetails": [
+      "Implemented cyclic LangGraph state machine navigating multi-course tables with checkpointing and error recovery.",
+      "Engineered full-stack companion web portal featuring Next.js 16, Supabase authentication, AES-256 encrypted credential storage, and realtime log streaming.",
+      "Provides deadline notifications directly to user email to prevent missed academic submissions."
+    ],
+    "image": "/images/projects/vu-quiz-assistant.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/vu-quiz-assistant-agent",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Public Personal Project"
+  },
+  {
+    "id": "android-job-hunting-agent-n8n",
+    "name": "Android Job Hunter Agent",
+    "category": "AI Automation & Workflows",
+    "categorySlug": "automation",
+    "tagline": "Autonomous AI-Powered Android Developer Job Discovery & Matching Pipeline",
+    "description": "An automated workflow engine built with n8n that scans global job markets for Android/Kotlin/Jetpack Compose positions, evaluates alignment against an engineer's technical profile, and compiles personalized alerts and cover materials.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "n8n Workflow Automation",
+      "OpenRouter AI / LLMs",
+      "SerpAPI",
+      "Gmail API",
+      "Google Sheets API"
+    ],
+    "metrics": {
+      "workflowComplexity": "Multi-Node Scheduled Pipeline (35 KB JSON)",
+      "status": "Active Workflow Template"
+    },
+    "verifiedDetails": [
+      "Scheduled daily morning search evaluating incoming Android roles against skills, compensation, and location parameters.",
+      "Integrates LLM scoring nodes that generate structured candidate match ratings and draft custom outreach briefs.",
+      "Automates record archiving in Google Sheets with instant Gmail notification dispatches."
+    ],
+    "image": "/images/projects/android-job-hunter-n8n.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/android-job-hunting-agent-n8n",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Public Automation Workflow"
+  },
+  {
+    "id": "insight-sparks-channel-automation",
+    "name": "Insight Sparks Content Pipeline",
+    "category": "AI Automation & Workflows",
+    "categorySlug": "automation",
+    "tagline": "LangGraph State Machine for Multi-Agent Media & Shorts Production",
+    "description": "A stateful multi-agent content generation pipeline built with LangGraph and SQLite checkpoints, automating creative brainstorming, scriptwriting, voice asset synchronization, and metadata generation.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Python",
+      "LangGraph",
+      "SQLite Checkpointing",
+      "LLM Prompt Engineering",
+      "YouTube Studio Automation"
+    ],
+    "metrics": {
+      "architecture": "7 Sequential Domain Agents",
+      "status": "Functional Pipeline"
+    },
+    "verifiedDetails": [
+      "Designed resilient multi-step pipeline using LangGraph nodes with SQLite checkpointing for reliable pause/resume execution.",
+      "Implements separation between state storage, agent execution nodes, and video manifest generators.",
+      "Powers automated content creation workflows with structured schema validation."
+    ],
+    "image": "/images/projects/insight-sparks.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/insight-sparks-channel-automation",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Public Workflow Project"
+  },
+  {
+    "id": "job-hunt-crew",
+    "name": "Job Hunter CrewAI Multi-Agent",
+    "category": "Agentic AI & AI Developer Tools",
+    "categorySlug": "agentic-ai",
+    "tagline": "Collaborative Multi-Agent Resume Tailoring & Career Research Crew",
+    "description": "A multi-agent Python system powered by CrewAI where autonomous specialized agents collaborate to analyze technical job descriptions, evaluate CV alignment, and produce customized application materials.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Python",
+      "CrewAI",
+      "UV Package Manager",
+      "LLMs & Structured JSON",
+      "Prompt Engineering"
+    ],
+    "metrics": {
+      "architecture": "Multi-Agent Crew with YAML Task Specifications",
+      "status": "Working CrewAI Template"
+    },
+    "verifiedDetails": [
+      "Uses declarative `agents.yaml` and `tasks.yaml` definitions for modular role, goal, and backstory configuration.",
+      "Generates research briefs and candidate alignment reports.",
+      "Demonstrates multi-agent task chaining and structured output synthesis."
+    ],
+    "image": "/images/projects/job-hunt-crew.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/job-hunt-crew",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Public Personal Project"
+  },
+  {
+    "id": "expense-tracker",
+    "name": "Android Expense Tracker",
+    "category": "Android Engineering",
+    "categorySlug": "android",
+    "tagline": "Personal Finance Tracker with Room DB, Charts & MVVM Architecture",
+    "description": "A clean, responsive Android personal finance application built to monitor daily spending, categorize transactions, and visualize monthly budgeting trends through local analytics.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Room Database",
+      "Dagger Hilt",
+      "MVVM Pattern",
+      "Coroutines & Flow"
+    ],
+    "metrics": {
+      "architecture": "MVVM + Repository Pattern",
+      "status": "Completed Open Source App"
+    },
+    "verifiedDetails": [
+      "Implements Room Database with TypeConverters, indexed queries, and reactive StateFlow observation.",
+      "Visualizes spending distributions using custom charting components and category tags.",
+      "Employs Dagger Hilt for dependency injection across database, repository, and viewmodel layers."
+    ],
+    "image": "/images/projects/expense-tracker.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/Expense-Tracker",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Public Personal Project"
+  },
+  {
+    "id": "weather-app",
+    "name": "Jetpack Compose Weather",
+    "category": "Android Engineering",
+    "categorySlug": "android",
+    "tagline": "Modern Weather Forecasting App with Retrofit & Dynamic Compose UI",
+    "description": "A weather forecasting application leveraging OpenWeather REST APIs, Retrofit, and Jetpack Compose to display real-time weather metrics, hourly predictions, and 7-day atmospheric forecasts.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Retrofit",
+      "Dagger Hilt",
+      "RESTful APIs",
+      "MVVM Architecture"
+    ],
+    "metrics": {
+      "architecture": "Single-Activity Jetpack Compose App",
+      "status": "Completed Android Project"
+    },
+    "verifiedDetails": [
+      "Asynchronous network fetching via Kotlin Coroutines and custom Retrofit interceptors.",
+      "Dynamic background atmospheric gradients that adapt to current weather conditions (sunny, rainy, overcast).",
+      "Clean UI separation with custom Material 3 cards for wind speed, humidity, and UV index."
+    ],
+    "image": "/images/projects/weather-app.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/Weather-App-",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Public Personal Project"
+  },
+  {
+    "id": "todo-app",
+    "name": "Reactive Todo App",
+    "category": "Android Engineering",
+    "categorySlug": "android",
+    "tagline": "Task & Priority Management with Firebase Realtime Sync",
+    "description": "A productivity Android application supporting real-time CRUD operations, live search filtering, and cloud synchronization using Firebase Realtime Database and Jetpack Compose.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Firebase Realtime DB",
+      "MVVM",
+      "Search & Filter Logic"
+    ],
+    "metrics": {
+      "status": "Completed Android Project",
+      "stars": 3
+    },
+    "verifiedDetails": [
+      "Instant multi-device task synchronization using Firebase Realtime Database event listeners.",
+      "Debounced search filter querying live tasks without UI frame drops.",
+      "Accessible swipe-to-delete and status toggle gestures."
+    ],
+    "image": "/images/projects/todo-app.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/Todo-s-App",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Public Personal Project"
+  },
+  {
+    "id": "medicine-taxculator",
+    "name": "Medicine Taxculator",
+    "category": "Android Engineering",
+    "categorySlug": "android",
+    "tagline": "Specialized Trade, Tax & Retail Pricing Tool for Pharmacy Software",
+    "description": "A utility Android calculation app tailored for retail pharmacy management to compute wholesale trade prices, variable sales tax rates, and maximum retail prices (MRP) with instant accuracy.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Financial & Tax Math Logic",
+      "Material 3 Components",
+      "State Hoisting"
+    ],
+    "metrics": {
+      "targetDomain": "Retail Pharmacy Inventory & Billing",
+      "status": "Completed Utility App"
+    },
+    "verifiedDetails": [
+      "Implements pharmaceutical tax formula calculation tables (Trade Price, Margin %, Tax Tier, Net MRP).",
+      "Real-time validation preventing negative margins or arithmetic discrepancies during store billing.",
+      "Demonstrates domain-specific problem solving for local healthcare retail."
+    ],
+    "image": "/images/projects/medicine-taxculator.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/Medicine-Taxculator",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Public Utility Project"
+  },
+  {
+    "id": "100-logic-problems",
+    "name": "100 Logic Problems in Kotlin",
+    "category": "Kotlin & Engineering Practice",
+    "categorySlug": "kotlin-practice",
+    "tagline": "Algorithmic Foundations & Problem Solving Across 6 Core Domains",
+    "description": "A structured, curated repository of 100 computational and algorithmic programming challenges implemented in idiomatic Kotlin, covering mathematics, string manipulation, collections, loops, and data structures.",
+    "featured": false,
+    "heroOrder": null,
+    "technologies": [
+      "Kotlin",
+      "Data Structures & Algorithms",
+      "Unit Testing",
+      "Idiomatic Functional Kotlin",
+      "Time/Space Complexity"
+    ],
+    "metrics": {
+      "problemsCovered": 100,
+      "categories": 6,
+      "status": "Completed Practice Suite"
+    },
+    "verifiedDetails": [
+      "Organized into 6 focused modules: 01_MathLogic, 02_StringsCharacters, 03_ArraysLists, 04_LoopsConditions, 05_LogicAlgorithms, and 06_ObjectMapSet.",
+      "Emphasizes clean, idiomatic Kotlin code (immutability, extension functions, collection transformations).",
+      "Includes comprehensive unit tests validating edge cases for all algorithmic solutions."
+    ],
+    "image": "/images/projects/100-logic-problems.svg",
+    "aspectRatio": "12/10",
+    "links": {
+      "github": "https://github.com/ChFardeelAzhar/100-Logic-Problems",
+      "liveDemo": null,
+      "playStore": null
+    },
+    "assetStatus": "conceptual-placeholder",
+    "confidentiality": "Public Practice Repository"
   }
 ]

@@ -1,0 +1,116 @@
+<svg width="1200" height="1000" viewBox="0 0 1200 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg6" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#3b2210"/>
+      <stop offset="100%" stop-color="#140a03"/>
+    </radialGradient>
+    <filter id="glow6" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1000" fill="url(#bg6)"/>
+  <circle cx="600" cy="500" r="350" fill="#b45309" opacity="0.2" filter="url(#glow6)"/>
+
+  <!-- Desktop Monitor Frame -->
+  <g transform="translate(150, 160)">
+    <!-- Monitor Bezel -->
+    <rect width="900" height="580" rx="20" fill="#1f1813" stroke="#78350f" stroke-width="4"/>
+    <circle cx="450" cy="20" r="4" fill="#451a03"/>
+
+    <!-- Screen Canvas -->
+    <g transform="translate(20, 35)">
+      <rect width="860" height="525" rx="8" fill="#140f0c"/>
+
+      <!-- Left Column: Menu Items Grid (2/3 width) -->
+      <g transform="translate(20, 20)">
+        <text x="0" y="24" fill="#fde68a" font-family="system-ui, sans-serif" font-size="22" font-weight="bold">Brew &amp; Espresso Bar</text>
+        <text x="380" y="24" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="14">Station: Counter 1 (Offline Sync)</text>
+
+        <!-- Categories Row -->
+        <rect x="0" y="45" width="90" height="32" rx="8" fill="#b45309"/>
+        <text x="45" y="66" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">Coffee</text>
+
+        <rect x="100" y="45" width="90" height="32" rx="8" fill="#292524"/>
+        <text x="145" y="66" fill="#a8a29e" font-size="13" font-weight="bold" text-anchor="middle">Tea</text>
+
+        <rect x="200" y="45" width="90" height="32" rx="8" fill="#292524"/>
+        <text x="245" y="66" fill="#a8a29e" font-size="13" font-weight="bold" text-anchor="middle">Pastry</text>
+
+        <rect x="300" y="45" width="100" height="32" rx="8" fill="#292524"/>
+        <text x="350" y="66" fill="#a8a29e" font-size="13" font-weight="bold" text-anchor="middle">Cold Brew</text>
+
+        <!-- 6 Item Cards -->
+        <g transform="translate(0, 95)">
+          <rect x="0" y="0" width="165" height="100" rx="12" fill="#231b15" stroke="#44342a"/>
+          <text x="15" y="35" fill="#ffffff" font-size="16" font-weight="bold">Cortado</text>
+          <text x="15" y="60" fill="#a8a29e" font-size="12">Double shot, milk</text>
+          <text x="15" y="85" fill="#f59e0b" font-size="16" font-weight="bold">$4.25</text>
+
+          <rect x="180" y="0" width="165" height="100" rx="12" fill="#231b15" stroke="#44342a"/>
+          <text x="195" y="35" fill="#ffffff" font-size="16" font-weight="bold">Flat White</text>
+          <text x="195" y="60" fill="#a8a29e" font-size="12">Microfoam texture</text>
+          <text x="195" y="85" fill="#f59e0b" font-size="16" font-weight="bold">$4.75</text>
+
+          <rect x="360" y="0" width="165" height="100" rx="12" fill="#231b15" stroke="#44342a"/>
+          <text x="375" y="35" fill="#ffffff" font-size="16" font-weight="bold">Cold Brew</text>
+          <text x="375" y="60" fill="#a8a29e" font-size="12">18hr steep</text>
+          <text x="375" y="85" fill="#f59e0b" font-size="16" font-weight="bold">$5.00</text>
+
+          <rect x="0" y="115" width="165" height="100" rx="12" fill="#231b15" stroke="#44342a"/>
+          <text x="15" y="150" fill="#ffffff" font-size="16" font-weight="bold">Matcha Latte</text>
+          <text x="15" y="175" fill="#a8a29e" font-size="12">Ceremonial grade</text>
+          <text x="15" y="200" fill="#f59e0b" font-size="16" font-weight="bold">$5.50</text>
+
+          <rect x="180" y="115" width="165" height="100" rx="12" fill="#231b15" stroke="#44342a"/>
+          <text x="195" y="150" fill="#ffffff" font-size="16" font-weight="bold">Iced Americano</text>
+          <text x="195" y="175" fill="#a8a29e" font-size="12">Triple shot over ice</text>
+          <text x="195" y="200" fill="#f59e0b" font-size="16" font-weight="bold">$3.75</text>
+
+          <rect x="360" y="115" width="165" height="100" rx="12" fill="#231b15" stroke="#44342a"/>
+          <text x="375" y="150" fill="#ffffff" font-size="16" font-weight="bold">Butter Croissant</text>
+          <text x="375" y="175" fill="#a8a29e" font-size="12">Freshly baked</text>
+          <text x="375" y="200" fill="#f59e0b" font-size="16" font-weight="bold">$3.50</text>
+        </g>
+      </g>
+
+      <!-- Right Column: Active Ticket / Order Drawer -->
+      <g transform="translate(565, 20)">
+        <rect width="275" height="485" rx="12" fill="#1c1613" stroke="#573a27"/>
+        <text x="20" y="35" fill="#ffffff" font-size="18" font-weight="bold">Current Order #142</text>
+        <text x="20" y="58" fill="#a8a29e" font-size="12">Table 04 · Dine In</text>
+
+        <!-- Order Items -->
+        <g transform="translate(20, 80)">
+          <text x="0" y="15" fill="#ffffff" font-size="14">1x Cortado (Oat Milk)</text>
+          <text x="200" y="15" fill="#fde68a" font-size="14">$4.75</text>
+
+          <text x="0" y="45" fill="#ffffff" font-size="14">1x Cold Brew (Vanilla)</text>
+          <text x="200" y="45" fill="#fde68a" font-size="14">$5.75</text>
+
+          <text x="0" y="75" fill="#ffffff" font-size="14">2x Butter Croissant</text>
+          <text x="200" y="75" fill="#fde68a" font-size="14">$7.00</text>
+
+          <line x1="0" y1="120" x2="235" y2="120" stroke="#44342a"/>
+
+          <text x="0" y="150" fill="#a8a29e" font-size="13">Subtotal</text>
+          <text x="200" y="150" fill="#ffffff" font-size="13">$17.50</text>
+
+          <text x="0" y="175" fill="#a8a29e" font-size="13">Tax (8%)</text>
+          <text x="200" y="175" fill="#ffffff" font-size="13">$1.40</text>
+
+          <text x="0" y="215" fill="#ffffff" font-size="18" font-weight="bold">Total Due</text>
+          <text x="180" y="215" fill="#10b981" font-size="20" font-weight="black">$18.90</text>
+        </g>
+
+        <!-- Pay Button -->
+        <rect x="20" y="415" width="235" height="48" rx="12" fill="#10b981"/>
+        <text x="137" y="445" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle">Charge $18.90 💳</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Monitor Stand Base -->
+  <path d="M540 740 L520 810 L680 810 L660 740 Z" fill="#292524"/>
+  <rect x="470" y="810" width="260" height="16" rx="8" fill="#1c1917" stroke="#44403c"/>
+</svg>

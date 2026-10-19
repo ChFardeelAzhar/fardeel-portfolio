@@ -1,0 +1,34 @@
+<svg width="1200" height="1000" viewBox="0 0 1200 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg7" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0e3a47"/>
+      <stop offset="100%" stop-color="#041217"/>
+    </radialGradient>
+    <filter id="glow7" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1000" fill="url(#bg7)"/>
+  <circle cx="600" cy="500" r="350" fill="#06b6d4" opacity="0.2" filter="url(#glow7)"/>
+  <g transform="translate(390, 140)">
+    <rect width="420" height="740" rx="46" fill="#062028" stroke="#0891b2" stroke-width="4"/>
+    <rect x="150" y="20" width="120" height="24" rx="12" fill="#000"/>
+    <rect x="30" y="70" width="360" height="50" rx="12" fill="#0e7490"/>
+    <text x="50" y="102" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="bold">KinHealth AI</text>
+    <rect x="30" y="140" width="360" height="160" rx="18" fill="#083344" stroke="#06b6d4"/>
+    <text x="50" y="175" fill="#a5f3fc" font-size="14" font-weight="bold">HEALTH STATUS OVERVIEW</text>
+    <text x="50" y="215" fill="#ffffff" font-size="28" font-weight="bold">72 BPM</text>
+    <text x="180" y="215" fill="#67e8f9" font-size="15">Resting Heart Rate</text>
+    <text x="50" y="260" fill="#cffafe" font-size="13">AI Consultation Ready · Last check today 08:30 AM</text>
+    <rect x="30" y="320" width="360" height="200" rx="18" fill="#083344" stroke="#0891b2"/>
+    <text x="50" y="355" fill="#67e8f9" font-size="14" font-weight="bold">AI MEDICAL DOCUMENT READER</text>
+    <text x="50" y="390" fill="#ffffff" font-size="16" font-weight="600">Blood Chemistry Panel (PDF)</text>
+    <text x="50" y="420" fill="#94a3b8" font-size="13">Parsed 14 biomarkers via on-device LLM.</text>
+    <rect x="50" y="450" width="320" height="40" rx="8" fill="#0e7490"/>
+    <text x="210" y="475" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">View AI Diagnostic Summary ↗</text>
+    <rect x="30" y="540" width="360" height="140" rx="18" fill="#042028" stroke="#155e75"/>
+    <text x="50" y="580" fill="#fff" font-size="16" font-weight="bold">Upcoming Doctor Appointment</text>
+    <text x="50" y="610" fill="#67e8f9" font-size="13">Dr. Sarah Jenkins · Tomorrow at 10:00 AM</text>
+    <text x="50" y="645" fill="#94a3b8" font-size="12">Telemetry auto-synced with clinic portal</text>
+  </g>
+</svg>

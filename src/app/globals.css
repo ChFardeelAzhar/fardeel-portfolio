@@ -1,0 +1,197 @@
+@import url('https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-page: #ffffff;
+  --bg-page-alt: #f8fafc;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  --button-shadow: 0px 2px 2px -1.5px rgba(0, 0, 0, 0.32), 0px 4.4px 4.4px -2.25px rgba(0, 0, 0, 0.30), 0px 9.8px 9.8px -3px rgba(0, 0, 0, 0.25), 0px 25px 25px -3.75px rgba(0, 0, 0, 0.11), 0px -5px 5px -3.75px rgba(0, 0, 0, 0.11);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--text-primary);
+  background: var(--bg-page);
+  font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Subtle background noise overlay (6% analog grain matching reference) */
+.noise-overlay {
+  background-image: url('/assets/framer-noise.png');
+  background-size: 128px;
+  background-repeat: repeat;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+/* Multi-stop liquid gradient bubble hover */
+.bubble-hover {
+  white-space: nowrap;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.bubble-hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 9999px;
+  background-image: var(--gradient);
+  background-size: 200% 200%;
+  background-position: 100% 100%;
+  transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(1px);
+  will-change: transform, opacity;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.bubble-hover:hover::before {
+  transform: translateX(0);
+  opacity: 0.35;
+  animation: fill-from-left 5s ease-out infinite;
+}
+
+.bubble-hover.active::before {
+  transform: translateX(0);
+  opacity: 0.65;
+  animation: fill-from-left 5s ease-out infinite;
+}
+
+/* Dark CTA button with bubble hover & inner noise */
+.bubble-hover-cta {
+  white-space: nowrap;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: #020617;
+  color: #ffffff;
+  box-shadow: var(--button-shadow);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+}
+
+.bubble-hover-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px -5px rgba(2, 6, 23, 0.3), var(--button-shadow);
+}
+
+.bubble-hover-cta:active {
+  transform: translateY(1px);
+}
+
+.bubble-hover-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 9999px;
+  background-image: var(--gradient);
+  background-size: 200% 200%;
+  background-position: 100% 100%;
+  transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(2px);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.bubble-hover-cta:hover::before {
+  transform: translateX(0);
+  opacity: 0.55;
+  animation: fill-from-left 5s ease-out infinite;
+}
+
+/* Infinite Footer Verb Cycler */
+@keyframes wordCycle {
+  0%, 10% {
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  12% {
+    filter: blur(2px);
+    opacity: 0.6;
+  }
+  15%, 35% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateY(0);
+  }
+  38%, 100% {
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+}
+
+.animate-word-cycle-1 {
+  animation: wordCycle 8s cubic-bezier(0.16, 1, 0.3, 1) infinite 0s;
+}
+.animate-word-cycle-2 {
+  animation: wordCycle 8s cubic-bezier(0.16, 1, 0.3, 1) infinite 2s;
+}
+.animate-word-cycle-3 {
+  animation: wordCycle 8s cubic-bezier(0.16, 1, 0.3, 1) infinite 4s;
+}
+.animate-word-cycle-4 {
+  animation: wordCycle 8s cubic-bezier(0.16, 1, 0.3, 1) infinite 6s;
+}
+
+/* Glassmorphism Progressive Bottom Blur Overlay */
+.progressive-blur-container {
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 40;
+}
+
+.progressive-blur-1 {
+  backdrop-filter: blur(0.2px) saturate(140%);
+  -webkit-backdrop-filter: blur(0.2px) saturate(140%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.progressive-blur-2 {
+  backdrop-filter: blur(1.5px) saturate(140%);
+  -webkit-backdrop-filter: blur(1.5px) saturate(140%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.progressive-blur-3 {
+  backdrop-filter: blur(5px) saturate(140%);
+  -webkit-backdrop-filter: blur(5px) saturate(140%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
+}
+
+.progressive-blur-4 {
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
+}

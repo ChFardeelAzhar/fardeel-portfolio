@@ -1,0 +1,37 @@
+[
+  {
+    "id": "all",
+    "name": "All Work",
+    "description": "Complete portfolio of Android applications, open-source libraries, AI agents, and engineering workflows."
+  },
+  {
+    "id": "android",
+    "name": "Android Engineering",
+    "description": "Production Android applications built with Kotlin, Jetpack Compose, Clean Architecture, and multi-module design."
+  },
+  {
+    "id": "open-source",
+    "name": "Open-Source & Dev Tools",
+    "description": "Published developer libraries, Gradle plugins, and reusable Kotlin packages."
+  },
+  {
+    "id": "agentic-ai",
+    "name": "Agentic AI & AI Dev Tools",
+    "description": "Autonomous multi-agent systems, ticket-to-PR pipelines, and intelligent developer assistants."
+  },
+  {
+    "id": "automation",
+    "name": "AI Automation & Workflows",
+    "description": "End-to-end process automation, LMS bots, content generation, and scheduled market alerts."
+  },
+  {
+    "id": "desktop-pos",
+    "name": "Desktop Software & POS",
+    "description": "High-density desktop management software and point-of-sale systems."
+  },
+  {
+    "id": "kotlin-practice",
+    "name": "Kotlin & Practice",
+    "description": "Algorithmic problem solving, data structures, and foundational Kotlin engineering."
+  }
+]

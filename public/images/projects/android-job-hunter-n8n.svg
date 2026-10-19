@@ -1,0 +1,66 @@
+<svg width="1200" height="1000" viewBox="0 0 1200 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg9" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4c1d24"/>
+      <stop offset="100%" stop-color="#190609"/>
+    </radialGradient>
+    <filter id="glow9" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1000" fill="url(#bg9)"/>
+  <circle cx="600" cy="500" r="350" fill="#f43f5e" opacity="0.2" filter="url(#glow9)"/>
+  <g transform="translate(140, 160)">
+    <rect width="920" height="680" rx="24" fill="#20070c" stroke="#f43f5e" stroke-width="2"/>
+    <rect x="30" y="30" width="860" height="40" rx="8" fill="#881337" opacity="0.4"/>
+    <text x="50" y="56" fill="#ffe4e6" font-family="monospace" font-size="16" font-weight="bold">n8n Workflow Automation Canvas — Android Developer Job Hunter</text>
+
+    <!-- n8n Node Chain -->
+    <g transform="translate(50, 120)">
+      <!-- Node 1: Schedule -->
+      <rect x="0" y="40" width="160" height="100" rx="14" fill="#ff6d5a" stroke="#ffffff" stroke-width="2"/>
+      <text x="80" y="80" fill="#fff" font-size="15" font-weight="bold" text-anchor="middle">9:00 AM</text>
+      <text x="80" y="105" fill="#ffe4e6" font-size="12" text-anchor="middle">Cron Schedule</text>
+
+      <line x1="160" y1="90" x2="220" y2="90" stroke="#f43f5e" stroke-width="3"/>
+
+      <!-- Node 2: SerpAPI -->
+      <rect x="220" y="40" width="160" height="100" rx="14" fill="#2b0d14" stroke="#f43f5e" stroke-width="2"/>
+      <text x="300" y="80" fill="#fff" font-size="15" font-weight="bold" text-anchor="middle">SerpAPI</text>
+      <text x="300" y="105" fill="#fca5a5" font-size="12" text-anchor="middle">Android &amp; Compose</text>
+
+      <line x1="380" y1="90" x2="440" y2="90" stroke="#f43f5e" stroke-width="3"/>
+
+      <!-- Node 3: OpenRouter LLM -->
+      <rect x="440" y="40" width="160" height="100" rx="14" fill="#2b0d14" stroke="#f43f5e" stroke-width="2"/>
+      <text x="520" y="80" fill="#fff" font-size="15" font-weight="bold" text-anchor="middle">OpenRouter AI</text>
+      <text x="520" y="105" fill="#fca5a5" font-size="12" text-anchor="middle">Score &amp; Match %</text>
+
+      <line x1="600" y1="90" x2="660" y2="90" stroke="#f43f5e" stroke-width="3"/>
+
+      <!-- Node 4: Filter -->
+      <rect x="660" y="40" width="160" height="100" rx="14" fill="#2b0d14" stroke="#f43f5e" stroke-width="2"/>
+      <text x="740" y="80" fill="#fff" font-size="15" font-weight="bold" text-anchor="middle">Match &gt; 70%</text>
+      <text x="740" y="105" fill="#fca5a5" font-size="12" text-anchor="middle">High Confidence</text>
+    </g>
+
+    <!-- Branching to Gmail & Sheets -->
+    <g transform="translate(100, 310)">
+      <rect x="0" y="0" width="340" height="160" rx="16" fill="#150407" stroke="#4c0519"/>
+      <text x="25" y="40" fill="#fb7185" font-size="16" font-weight="bold">Gmail Notification Dispatch</text>
+      <text x="25" y="70" fill="#ffffff" font-size="14">Subject: 🎯 3 High-Match Android Roles</text>
+      <text x="25" y="95" fill="#fda4af" font-size="12">Custom tailored cover letters attached</text>
+      <text x="25" y="125" fill="#34d399" font-size="12 font-weight-bold">Status: Instant Email Sent ✓</text>
+
+      <rect x="380" y="0" width="340" height="160" rx="16" fill="#150407" stroke="#4c0519"/>
+      <text x="405" y="40" fill="#fb7185" font-size="16" font-weight="bold">Google Sheets Tracking</text>
+      <text x="405" y="70" fill="#ffffff" font-size="14">Logged: Role, Company, Link, Match %</text>
+      <text x="405" y="95" fill="#fda4af" font-size="12">Daily summary compiled at 7 PM</text>
+      <text x="405" y="125" fill="#34d399" font-size="12 font-weight-bold">Status: Synchronized ✓</text>
+    </g>
+
+    <!-- JSON Workflow pill -->
+    <rect x="260" y="530" width="400" height="50" rx="25" fill="#f43f5e" opacity="0.3"/>
+    <text x="460" y="562" fill="#fff" font-size="15" font-weight="bold" text-anchor="middle">35 KB Production n8n Workflow JSON</text>
+  </g>
+</svg>

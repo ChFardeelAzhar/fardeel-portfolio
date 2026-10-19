@@ -1,0 +1,72 @@
+<svg width="1200" height="1000" viewBox="0 0 1200 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#042f2e"/>
+      <stop offset="100%" stop-color="#021414"/>
+    </radialGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1000" fill="url(#bg2)"/>
+  <circle cx="600" cy="500" r="350" fill="#0d9488" opacity="0.2" filter="url(#glow2)"/>
+
+  <!-- Left: Multi-Agent Pipeline Box -->
+  <g transform="translate(140, 160)">
+    <rect width="480" height="680" rx="24" fill="#071b1a" stroke="#0d9488" stroke-width="2"/>
+    <rect x="30" y="30" width="420" height="40" rx="10" fill="#115e59" opacity="0.3"/>
+    <text x="45" y="56" fill="#2dd4bf" font-family="monospace" font-size="16" font-weight="bold">⚡ CrewAI Ticket-to-PR Pipeline</text>
+
+    <!-- Step 1 -->
+    <rect x="30" y="95" width="420" height="85" rx="12" fill="#0a2a28" stroke="#14b8a6" stroke-width="1.5"/>
+    <text x="50" y="130" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">1. Crash Intake &amp; Analysis</text>
+    <text x="50" y="155" fill="#99f6e4" font-family="monospace" font-size="12">NullPointerException in CheckoutFragment.kt:84</text>
+
+    <!-- Step 2 -->
+    <rect x="30" y="200" width="420" height="85" rx="12" fill="#0a2a28" stroke="#14b8a6" stroke-width="1.5"/>
+    <text x="50" y="235" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">2. Antigravity CLI Bridge</text>
+    <text x="50" y="260" fill="#99f6e4" font-family="monospace" font-size="12">agy plan &amp; code_edit --safe-lifecycle-only</text>
+
+    <!-- Step 3 -->
+    <rect x="30" y="305" width="420" height="85" rx="12" fill="#0a2a28" stroke="#14b8a6" stroke-width="1.5"/>
+    <text x="50" y="340" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">3. Gradle Build &amp; Test</text>
+    <text x="50" y="365" fill="#99f6e4" font-family="monospace" font-size="12">./gradlew testDebugUnitTest [PASSED]</text>
+
+    <!-- Step 4 -->
+    <rect x="30" y="410" width="420" height="85" rx="12" fill="#0a2a28" stroke="#14b8a6" stroke-width="1.5"/>
+    <text x="50" y="445" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">4. ADB Device Reproduction</text>
+    <text x="50" y="470" fill="#99f6e4" font-family="monospace" font-size="12">emulator-5554 activity launched &amp; verified</text>
+
+    <!-- Step 5: Final output -->
+    <rect x="30" y="515" width="420" height="120" rx="12" fill="#042f2e" stroke="#2dd4bf" stroke-width="2"/>
+    <text x="50" y="550" fill="#ffffff" font-family="system-ui, sans-serif" font-size="17" font-weight="bold">Review-Ready PR Generated 🚀</text>
+    <text x="50" y="580" fill="#5eead4" font-family="monospace" font-size="13">fix(checkout): guard null cart session state</text>
+    <text x="50" y="605" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">+12 -3 lines | emulator screenshot attached</text>
+  </g>
+
+  <!-- Right: Emulator Preview Screen -->
+  <g transform="translate(680, 160)">
+    <rect width="380" height="680" rx="44" fill="#071b1a" stroke="#2dd4bf" stroke-width="4"/>
+    <rect x="130" y="20" width="120" height="24" rx="12" fill="#000"/>
+
+    <rect x="30" y="80" width="320" height="40" rx="8" fill="#134e4a"/>
+    <text x="50" y="106" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">Android Test Device</text>
+
+    <!-- Success check screen -->
+    <circle cx="190" cy="280" r="60" fill="#14b8a6" opacity="0.2"/>
+    <circle cx="190" cy="280" r="45" fill="#0d9488"/>
+    <path d="M175 280 L185 292 L205 268" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text x="190" y="380" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Bug Reproduced &amp; Fixed</text>
+    <text x="190" y="415" fill="#99f6e4" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">No crash observed on rerun</text>
+
+    <!-- Log box -->
+    <rect x="35" y="460" width="310" height="180" rx="14" fill="#041f1e" stroke="#134e4a"/>
+    <text x="50" y="490" fill="#2dd4bf" font-family="monospace" font-size="11">D/ActivityTaskManager: START</text>
+    <text x="50" y="515" fill="#2dd4bf" font-family="monospace" font-size="11">I/CheckoutFragment: Cart loaded (3)</text>
+    <text x="50" y="540" fill="#2dd4bf" font-family="monospace" font-size="11">I/PaymentProcessor: State OK</text>
+    <text x="50" y="565" fill="#34d399" font-family="monospace" font-size="11">V/TestStatus: 0 errors, exit 0</text>
+    <text x="50" y="605" fill="#a7f3d0" font-family="monospace" font-size="12" font-weight="bold">ADB QA Passed ✓</text>
+  </g>
+</svg>
